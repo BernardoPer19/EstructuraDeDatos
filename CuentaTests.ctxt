@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=CuentaTests
+comment1.params=
+comment1.target=void\ nuevoSaldoEsCero()
+comment2.params=
+comment2.target=void\ verDue\u00F1oDeLaCuenta()
+comment3.params=
+comment3.target=void\ depositarDiner()
+comment4.params=
+comment4.target=void\ retirarDineroCorrectamente()
+comment5.params=
+comment5.target=void\ setUp()
+comment6.params=
+comment6.target=void\ tearDown()
+numComments=7
