@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=InterfaceDEC
+comment1.params=dato
+comment1.target=void\ addAtBeginning(java.lang.Object)
+comment2.params=dato
+comment2.target=void\ addtData(java.lang.Object)
+comment3.params=pos\ dato
+comment3.target=void\ addPositionAndData(int,\ java.lang.Object)
+comment4.params=
+comment4.target=void\ deleteFromBeginning()
+comment5.params=
+comment5.target=void\ deleteFromEnd()
+comment6.params=pos
+comment6.target=java.lang.Object\ deleteAtPosition(int)
+comment7.params=
+comment7.target=int\ size()
+comment8.params=
+comment8.target=boolean\ isEmpty()
+numComments=9
