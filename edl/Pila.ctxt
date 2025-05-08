@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Pila
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pila\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Pila()
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment3.params=dato
+comment3.target=void\ push(java.lang.Object)
+comment4.params=
+comment4.target=java.lang.Object\ pop()
+comment5.params=
+comment5.target=java.lang.Object\ peek()
+numComments=6

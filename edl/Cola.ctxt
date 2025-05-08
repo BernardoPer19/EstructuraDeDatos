@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Cola
+comment1.params=
+comment1.target=Cola()
+comment2.params=dato
+comment2.target=void\ offer(java.lang.Object)
+comment3.params=
+comment3.target=java.lang.Object\ poll()
+comment4.params=
+comment4.target=boolean\ isEmpty()
+numComments=5

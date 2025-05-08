@@ -9,6 +9,10 @@ public class ListaSE<T>{
         size = 0;
     }
 
+    public int size(){
+        return size;
+    }
+    
     public T get(int pos){
         T res = null; 
         if(pos>=0 && pos < size){

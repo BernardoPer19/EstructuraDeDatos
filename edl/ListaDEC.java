@@ -37,7 +37,7 @@ public class ListaDEC<T> implements InterfaceDEC<T> {
             fin = nuevo;
             inicio.setAnterior(fin);
             fin.setSiguiente(inicio);
-            
+
             size++;
         }else {
             nuevo.setAnterior(fin);
@@ -52,7 +52,45 @@ public class ListaDEC<T> implements InterfaceDEC<T> {
 
     @Override
     public void addPositionAndData(int pos, T dato) {
-        // implementación pendiente
+        if(pos<0 || pos > size){
+            System.out.println("no"); 
+        }
+
+        NodoDEC<T> nuevo = new NodoDEC<T>(dato);
+        NodoDEC<T> siguiente = new NodoDEC<T>(dato);
+        if(isEmpty()){
+            inicio = fin = nuevo;
+            nuevo.setSiguiente(nuevo);
+            nuevo.setAnterior(nuevo);
+            size++;
+        }else if(pos == 0){
+            nuevo.setAnterior(fin);
+            nuevo.setSiguiente(inicio);
+            inicio.setAnterior(nuevo);
+            fin.setSiguiente(nuevo);
+            inicio = nuevo;
+        }else if(pos == size - 1){
+            nuevo.setAnterior(fin);
+            nuevo.setSiguiente(inicio);
+            fin.setSiguiente(nuevo);
+            inicio.setAnterior(nuevo);
+            fin = nuevo;
+        }else{
+            NodoDEC<T> actual = inicio;
+
+            for(int i = 0; i <= pos; i++){
+                actual = actual.getSiguiente();
+            }
+
+            NodoDEC<T> anterior = actual.getAnterior();
+
+            nuevo.setSiguiente(actual);
+            actual.setAnterior(nuevo);
+            nuevo.setAnterior(anterior);
+            anterior.setSiguiente(nuevo);
+
+        }
+        size++;
     }
 
     @Override
@@ -67,8 +105,22 @@ public class ListaDEC<T> implements InterfaceDEC<T> {
 
     @Override
     public T deleteAtPosition(int pos) {
-        // implementación pendiente
+    
+        
+        
+        if(isEmpty()){
         return null;
+        }else if(inicio == fin){
+            inicio = null;
+            fin = null;
+        }else if(pos == size - 1){
+            fin = fin.getAnterior();
+            
+        }
+        
+        
+        return null;
+
     }
 
     @Override
